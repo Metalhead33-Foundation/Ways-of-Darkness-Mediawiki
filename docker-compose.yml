@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mediawiki:
+    build: .
+    ports:
+    - "8080:80"
+    volumes:
+    - images:/var/www/html/images
+    - ./:/var/www/html/logging/
+    env_file:
+    - mediawiki.env
+volumes:
+  images: {}
