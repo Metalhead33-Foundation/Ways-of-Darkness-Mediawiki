@@ -8,3 +8,4 @@ RUN docker-php-source extract && \
 
 COPY fonts addons ./
 COPY LocalSettings.php .
+RUN chown www-data -R .
