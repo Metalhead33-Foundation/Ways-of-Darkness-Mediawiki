@@ -1,7 +1,6 @@
 Ways of Darkness Wiki
 =====================
-![build status](https://bamboo.touhou.fm/plugins/servlet/wittified/build-status/WOD-MW)
-![production status](https://bamboo.touhou.fm/plugins/servlet/wittified/deploy-status/39485441)
+![build status](https://bamboo.touhou.fm/plugins/servlet/wittified/build-status/WOD-MW) ![production status](https://bamboo.touhou.fm/plugins/servlet/wittified/deploy-status/39485441)
 
 This project builds the mediawiki docker for [Ways of Darkness](https://ways-of-darkness.sonck.nl/)
 
