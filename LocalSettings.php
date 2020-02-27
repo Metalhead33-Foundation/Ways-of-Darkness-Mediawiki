@@ -36,7 +36,7 @@ $wgUserPathInfo = true;
 $wgScriptExtension = ".php";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = $_ENV['MW_SERVER'];
+$wgServer = $_ENV['MW_SITE'];
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
