@@ -1,5 +1,5 @@
 FROM mediawiki:1.34
-RUN apt-get update && apt-get install -y lua5.1-dev libpq-dev
+RUN apt-get update && apt-get install -y lua5.1-dev libpq-dev unzip
 RUN docker-php-source extract && \
     pecl install LuaSandbox && \
     docker-php-ext-enable luasandbox && \
@@ -9,4 +9,13 @@ RUN docker-php-source extract && \
 COPY fonts addons ./
 COPY LocalSettings.php .
 COPY htaccess .htaccess
+
+RUN ( \
+    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"; \
+    php composer-setup.php; \
+    php -r "unlink('composer-setup.php');"; \
+    php composer.phar install; \
+    ( cd extensions/Widgets; php ../../composer.phar install; ) ; \
+    php -r "unlink('composer.phar');"; \
+)
 RUN chown www-data -R .

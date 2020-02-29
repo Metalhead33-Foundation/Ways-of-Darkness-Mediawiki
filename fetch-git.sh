@@ -24,9 +24,6 @@ done
 [ -e EmbedVideo ] || git clone --recursive https://gitlab.com/hydrawiki/extensions/EmbedVideo.git || exit 1
 [ -e SimpleMathJax ] || git clone --recursive https://github.com/jmnote/SimpleMathJax.git || exit 1
 [ -e 3DAlloy ] || git clone --recursive https://github.com/dolfinus/3DAlloy || exit 1
-pushd Widgets || exit 1
-composer update --no-dev || exit 1
-popd
 popd
 
 mkdir -p skins  || exit 1
