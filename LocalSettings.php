@@ -143,7 +143,7 @@ wfLoadSkin( 'Timeless' );
 #wfLoadSkin( 'Tweeki' );
 #wfLoadSkin( 'chameleon' );
 wfLoadSkin( 'Metrolook' );
-# wfLoadSkin( 'foreground' );
+#wfLoadSkin( 'foreground' );
 //wfLoadSkin( 'chameleon' );
 #wfLoadSkin( 'pivot' );
 $wgVectorResponsive = true;
@@ -170,7 +170,7 @@ $wgGroupPermissions['bureaucrat']['editsitejson'] = true;
 $wgGroupPermissions['sysop']['editsitejson'] = true;
 wfLoadExtension( 'BlockAndNuke' );
 wfLoadExtension( 'VoteNY' );
-wfLoadExtension ('SocialProfile') ;
+require_once "$IP/extensions/SocialProfile/SocialProfile.php";
 wfLoadExtension( 'SocialProfile/UserWelcome' );
 wfLoadExtension( 'WikiTextLoggedInOut' );
 wfLoadExtension( 'BlogPage' );
@@ -209,7 +209,7 @@ $wgPageDisqusExclude = array("Main Page", ".+:.+");
 wfLoadExtension( 'EmbedVideo' );
 wfLoadExtension( 'Gadgets' );
 #require_once "$IP/extensions/iDisplay/iDisplay.php";
-wfLoadExtension( 'Widgets') ;
+require_once "$IP/extensions/Widgets/Widgets.php";
 wfLoadExtension( 'ImageMap' );
 wfLoadExtension( 'InputBox' );
 wfLoadExtension( 'Interwiki' );
@@ -249,7 +249,7 @@ $wgGroupPermissions['bureaucrat']['usermerge'] = true;
 //
 // optional: default is array( 'sysop' )
  $wgUserMergeProtectedGroups = array( 'groupname' );
-wfLoadExtension ("ConfirmAccount");
+require_once "$IP/extensions/ConfirmAccount/ConfirmAccount.php";
 $wgConfirmAccountContact = $_ENV["MW_CONFIRMACCOUNT"];
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
@@ -292,6 +292,13 @@ $wgGroupPermissions['*']['upload'] = false;
 $wgGroupPermissions['bureaucrat']['upload'] = true;
 $wgGroupPermissions['sysop']['upload'] = true;
 
+# PhpTags - to test 3D Alloy
+wfLoadExtension('PhpTags');
+wfLoadExtension('PhpTagsFunctions');
+wfLoadExtension('PhpTagsWiki');
+
+# 3D alloy
+wfLoadExtension( '3DAlloy' );
 $wgFileExtensions = array_merge(
   $wgFileExtensions, array(
       'json', '3dj', '3djson', 'three',
