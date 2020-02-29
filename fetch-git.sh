@@ -32,7 +32,7 @@ echo "Downloading skins!" &&
 for MW in ${MW_SKINS}
 do
     [ -e ${MW} ] || git clone --recursive https://github.com/wikimedia/mediawiki-skins-${MW}.git ${MW} -b REL${WIKI_RELEASE} &&
-done
+done &&
 [ -e Tweeki ] || git clone --recursive https://github.com/thaider/Tweeki.git &&
 [ -e foreground ] || git  clone --recursive https://github.com/jthingelstad/foreground.git &&
 [ -e chameleon ] || git  clone --recursive https://github.com/cmln/chameleon.git &&
