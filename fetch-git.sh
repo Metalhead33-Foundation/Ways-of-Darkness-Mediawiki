@@ -16,12 +16,12 @@ echo "Downloading extensions!"
 for MW in ${MW_EXTENSIONS}
 do
     echo "Downloading ${MW}"
-    [ -e ${MW} ] || git clone https://github.com/wikimedia/mediawiki-extensions-${MW}.git ${MW} -b REL${WIKI_RELEASE}
+    [ -e ${MW} ] || git clone --recursive https://github.com/wikimedia/mediawiki-extensions-${MW}.git ${MW} -b REL${WIKI_RELEASE}
 done
-[ -e NativeSvgHandler ] || git clone https://github.com/wikimedia/mediawiki-extensions-NativeSvgHandler.git NativeSvgHandler
-[ -e EmbedVideo ] || git clone https://gitlab.com/hydrawiki/extensions/EmbedVideo.git ; \
-[ -e SimpleMathJax ] || git clone https://github.com/jmnote/SimpleMathJax.git ; \
-[ -e 3DAlloy ] || git clone https://github.com/dolfinus/3DAlloy
+[ -e NativeSvgHandler ] || git clone --recursive https://github.com/wikimedia/mediawiki-extensions-NativeSvgHandler.git NativeSvgHandler
+[ -e EmbedVideo ] || git clone --recursive https://gitlab.com/hydrawiki/extensions/EmbedVideo.git ; \
+[ -e SimpleMathJax ] || git clone --recursive https://github.com/jmnote/SimpleMathJax.git ; \
+[ -e 3DAlloy ] || git clone --recursive https://github.com/dolfinus/3DAlloy
 popd ;
 
 MW_SKINS="Vector Timeless Metrolook"
@@ -31,12 +31,12 @@ pushd skins;
 echo "Downloading skins!"
 for MW in ${MW_SKINS}
 do
-    [ -e ${MW} ] || git clone https://github.com/wikimedia/mediawiki-skins-${MW}.git ${MW} -b REL${WIKI_RELEASE}; \
+    [ -e ${MW} ] || git clone --recursive https://github.com/wikimedia/mediawiki-skins-${MW}.git ${MW} -b REL${WIKI_RELEASE}; \
 done
-[ -e Tweeki ] || git clone https://github.com/thaider/Tweeki.git ; \
-[ -e foreground ] || git clone https://github.com/jthingelstad/foreground.git ; \
-[ -e chameleon ] || git clone https://github.com/cmln/chameleon.git ; \
-[ -e pivot ] || git clone https://github.com/Hutchy68/pivot.git ;
+[ -e Tweeki ] || git clone --recursive https://github.com/thaider/Tweeki.git ; \
+[ -e foreground ] || git --recursive clone https://github.com/jthingelstad/foreground.git ; \
+[ -e chameleon ] || git --recursive clone https://github.com/cmln/chameleon.git ; \
+[ -e pivot ] || git clone --recursive https://github.com/Hutchy68/pivot.git ;
 popd ;
 
 popd
