@@ -170,7 +170,7 @@ $wgGroupPermissions['bureaucrat']['editsitejson'] = true;
 $wgGroupPermissions['sysop']['editsitejson'] = true;
 wfLoadExtension( 'BlockAndNuke' );
 wfLoadExtension( 'VoteNY' );
-wfLoadExtension ('SocialProfile.php') ;
+wfLoadExtension ('SocialProfile') ;
 wfLoadExtension( 'SocialProfile/UserWelcome' );
 wfLoadExtension( 'WikiTextLoggedInOut' );
 wfLoadExtension( 'BlogPage' );
@@ -209,7 +209,7 @@ $wgPageDisqusExclude = array("Main Page", ".+:.+");
 wfLoadExtension( 'EmbedVideo' );
 wfLoadExtension( 'Gadgets' );
 #require_once "$IP/extensions/iDisplay/iDisplay.php";
-wfLoadExtension( 'Widgets.php') ;
+wfLoadExtension( 'Widgets') ;
 wfLoadExtension( 'ImageMap' );
 wfLoadExtension( 'InputBox' );
 wfLoadExtension( 'Interwiki' );
@@ -249,7 +249,7 @@ $wgGroupPermissions['bureaucrat']['usermerge'] = true;
 //
 // optional: default is array( 'sysop' )
  $wgUserMergeProtectedGroups = array( 'groupname' );
-wfLoadExtension ("ConfirmAccount.php");
+wfLoadExtension ("ConfirmAccount");
 $wgConfirmAccountContact = $_ENV["MW_CONFIRMACCOUNT"];
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
