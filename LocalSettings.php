@@ -280,6 +280,9 @@ $wgGroupPermissions['sysop']['replacetext'] = true;
 $wgEmailFrom="info@ways-of-darkness.sonck.nl";
 wfLoadExtension( 'LinkSuggest' );
 wfLoadExtension( 'YouTube' );
+wfLoadExtension( 'BetaFeatures' );
+wfLoadExtension( 'CommonsMetadata' );
+wfLoadExtension( 'MultimediaViewer' );
 # wfLoadExtension( 'Video' ); # DO NOT ADD AGAIN
 
 # For compatibility with CloudFlare
@@ -291,14 +294,6 @@ $wgDisableCounters=true;
 $wgGroupPermissions['*']['upload'] = false;
 $wgGroupPermissions['bureaucrat']['upload'] = true;
 $wgGroupPermissions['sysop']['upload'] = true;
-
-# PhpTags - to test 3D Alloy
-wfLoadExtension('PhpTags');
-wfLoadExtension('PhpTagsFunctions');
-wfLoadExtension('PhpTagsWiki');
-
-# 3D alloy
-wfLoadExtension( '3DAlloy' );
 $wgFileExtensions = array_merge(
   $wgFileExtensions, array(
       'json', '3dj', '3djson', 'three',

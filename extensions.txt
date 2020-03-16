@@ -38,10 +38,9 @@ JsonConfig
 Graph
 ImportArticles
 DeleteBatch
-PhpTags
-PhpTagsFunctions
-PhpTagsWiki
+BetaFeatures
+CommonsMetadata
+MultimediaViewer
 NativeSvgHandler;https://github.com/wikimedia/mediawiki-extensions-NativeSvgHandler.git
 EmbedVideo;https://gitlab.com/hydrawiki/extensions/EmbedVideo.git
 SimpleMathJax;https://github.com/jmnote/SimpleMathJax.git
-3DAlloy;https://github.com/dolfinus/3DAlloy.git
