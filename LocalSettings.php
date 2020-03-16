@@ -280,7 +280,6 @@ $wgGroupPermissions['sysop']['replacetext'] = true;
 $wgEmailFrom="info@ways-of-darkness.sonck.nl";
 wfLoadExtension( 'LinkSuggest' );
 wfLoadExtension( 'YouTube' );
-wfLoadExtension( 'BetaFeatures' );
 wfLoadExtension( 'CommonsMetadata' );
 wfLoadExtension( 'MultimediaViewer' );
 # wfLoadExtension( 'Video' ); # DO NOT ADD AGAIN

@@ -38,7 +38,6 @@ JsonConfig
 Graph
 ImportArticles
 DeleteBatch
-BetaFeatures
 CommonsMetadata
 MultimediaViewer
 NativeSvgHandler;https://github.com/wikimedia/mediawiki-extensions-NativeSvgHandler.git
