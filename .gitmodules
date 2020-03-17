@@ -1,0 +1,208 @@
+[submodule "addons/extensions/WikiEditor"]
+	path = addons/extensions/WikiEditor
+	url = https://github.com/wikimedia/mediawiki-extensions-WikiEditor.git
+	branch = REL1_34
+[submodule "addons/extensions/UploadWizard"]
+	path = addons/extensions/UploadWizard
+	url = https://github.com/wikimedia/mediawiki-extensions-UploadWizard.git
+	branch = REL1_34
+[submodule "addons/extensions/Widgets"]
+	path = addons/extensions/Widgets
+	url = https://github.com/wikimedia/mediawiki-extensions-Widgets.git
+	branch = REL1_34
+[submodule "addons/extensions/VoteNY"]
+	path = addons/extensions/VoteNY
+	url = https://github.com/wikimedia/mediawiki-extensions-VoteNY.git
+	branch = REL1_34
+[submodule "addons/extensions/PhpTagsFunctions"]
+	path = addons/extensions/PhpTagsFunctions
+	url = https://github.com/wikimedia/mediawiki-extensions-PhpTagsFunctions.git
+	branch = REL1_34
+[submodule "addons/extensions/PhpTagsWiki"]
+	path = addons/extensions/PhpTagsWiki
+	url = https://github.com/wikimedia/mediawiki-extensions-PhpTagsWiki.git
+	branch = REL1_34
+[submodule "addons/extensions/BlogPage"]
+	path = addons/extensions/BlogPage
+	url = https://github.com/wikimedia/mediawiki-extensions-BlogPage.git
+	branch = REL1_34
+[submodule "addons/extensions/Tabber"]
+	path = addons/extensions/Tabber
+	url = https://github.com/wikimedia/mediawiki-extensions-Tabber.git
+	branch = REL1_34
+[submodule "addons/extensions/DeleteBatch"]
+	path = addons/extensions/DeleteBatch
+	url = https://github.com/wikimedia/mediawiki-extensions-DeleteBatch.git
+	branch = REL1_34
+[submodule "addons/extensions/ImageMap"]
+	path = addons/extensions/ImageMap
+	url = https://github.com/wikimedia/mediawiki-extensions-ImageMap.git
+	branch = REL1_34
+[submodule "addons/extensions/Graph"]
+	path = addons/extensions/Graph
+	url = https://github.com/wikimedia/mediawiki-extensions-Graph.git
+	branch = REL1_34
+[submodule "addons/extensions/Gadgets"]
+	path = addons/extensions/Gadgets
+	url = https://github.com/wikimedia/mediawiki-extensions-Gadgets.git
+	branch = REL1_34
+[submodule "addons/extensions/LinkSuggest"]
+	path = addons/extensions/LinkSuggest
+	url = https://github.com/wikimedia/mediawiki-extensions-LinkSuggest.git
+	branch = REL1_34
+[submodule "addons/extensions/PdfHandler"]
+	path = addons/extensions/PdfHandler
+	url = https://github.com/wikimedia/mediawiki-extensions-PdfHandler.git
+	branch = REL1_34
+[submodule "addons/extensions/CodeMirror"]
+	path = addons/extensions/CodeMirror
+	url = https://github.com/wikimedia/mediawiki-extensions-CodeMirror.git
+	branch = REL1_34
+[submodule "addons/extensions/Cite"]
+	path = addons/extensions/Cite
+	url = https://github.com/wikimedia/mediawiki-extensions-Cite.git
+	branch = REL1_34
+[submodule "addons/extensions/YouTube"]
+	path = addons/extensions/YouTube
+	url = https://github.com/wikimedia/mediawiki-extensions-YouTube.git
+	branch = REL1_34
+[submodule "addons/extensions/UserMerge"]
+	path = addons/extensions/UserMerge
+	url = https://github.com/wikimedia/mediawiki-extensions-UserMerge.git
+	branch = REL1_34
+[submodule "addons/extensions/CategoryTree"]
+	path = addons/extensions/CategoryTree
+	url = https://github.com/wikimedia/mediawiki-extensions-CategoryTree.git
+	branch = REL1_34
+[submodule "addons/extensions/Poem"]
+	path = addons/extensions/Poem
+	url = https://github.com/wikimedia/mediawiki-extensions-Poem.git
+	branch = REL1_34
+[submodule "addons/extensions/ConfirmEdit"]
+	path = addons/extensions/ConfirmEdit
+	url = https://github.com/wikimedia/mediawiki-extensions-ConfirmEdit.git
+	branch = REL1_34
+[submodule "addons/extensions/JsonConfig"]
+	path = addons/extensions/JsonConfig
+	url = https://github.com/wikimedia/mediawiki-extensions-JsonConfig.git
+	branch = REL1_34
+[submodule "addons/extensions/ReplaceText"]
+	path = addons/extensions/ReplaceText
+	url = https://github.com/wikimedia/mediawiki-extensions-ReplaceText.git
+	branch = REL1_34
+[submodule "addons/extensions/3DAlloy"]
+	path = addons/extensions/3DAlloy
+	url = https://github.com/dolfinus/3DAlloy.git
+[submodule "addons/extensions/SocialProfile"]
+	path = addons/extensions/SocialProfile
+	url = https://github.com/wikimedia/mediawiki-extensions-SocialProfile.git
+	branch = REL1_34
+[submodule "addons/extensions/ConfirmAccount"]
+	path = addons/extensions/ConfirmAccount
+	url = https://github.com/wikimedia/mediawiki-extensions-ConfirmAccount.git
+	branch = REL1_34
+[submodule "addons/extensions/Comments"]
+	path = addons/extensions/Comments
+	url = https://github.com/wikimedia/mediawiki-extensions-Comments.git
+	branch = REL1_34
+[submodule "addons/extensions/EmbedVideo"]
+	path = addons/extensions/EmbedVideo
+	url = https://gitlab.com/hydrawiki/extensions/EmbedVideo.git
+[submodule "addons/extensions/ParserFunctions"]
+	path = addons/extensions/ParserFunctions
+	url = https://github.com/wikimedia/mediawiki-extensions-ParserFunctions.git
+	branch = REL1_34
+[submodule "addons/extensions/ImportArticles"]
+	path = addons/extensions/ImportArticles
+	url = https://github.com/wikimedia/mediawiki-extensions-ImportArticles.git
+	branch = REL1_34
+[submodule "addons/extensions/BlockAndNuke"]
+	path = addons/extensions/BlockAndNuke
+	url = https://github.com/wikimedia/mediawiki-extensions-BlockAndNuke.git
+	branch = REL1_34
+[submodule "addons/extensions/CharInsert"]
+	path = addons/extensions/CharInsert
+	url = https://github.com/wikimedia/mediawiki-extensions-CharInsert.git
+	branch = REL1_34
+[submodule "addons/extensions/Renameuser"]
+	path = addons/extensions/Renameuser
+	url = https://github.com/wikimedia/mediawiki-extensions-Renameuser.git
+	branch = REL1_34
+[submodule "addons/extensions/Nuke"]
+	path = addons/extensions/Nuke
+	url = https://github.com/wikimedia/mediawiki-extensions-Nuke.git
+	branch = REL1_34
+[submodule "addons/extensions/NativeSvgHandler"]
+	path = addons/extensions/NativeSvgHandler
+	url = https://github.com/wikimedia/mediawiki-extensions-NativeSvgHandler.git
+[submodule "addons/extensions/Math"]
+	path = addons/extensions/Math
+	url = https://github.com/wikimedia/mediawiki-extensions-Math.git
+	branch = REL1_34
+[submodule "addons/extensions/CiteThisPage"]
+	path = addons/extensions/CiteThisPage
+	url = https://github.com/wikimedia/mediawiki-extensions-CiteThisPage.git
+	branch = REL1_34
+[submodule "addons/extensions/Scribunto"]
+	path = addons/extensions/Scribunto
+	url = https://github.com/wikimedia/mediawiki-extensions-Scribunto.git
+	branch = REL1_34
+[submodule "addons/extensions/UniversalLanguageSelector"]
+	path = addons/extensions/UniversalLanguageSelector
+	url = https://github.com/wikimedia/mediawiki-extensions-UniversalLanguageSelector.git
+	branch = REL1_34
+[submodule "addons/extensions/SimpleMathJax"]
+	path = addons/extensions/SimpleMathJax
+	url = https://github.com/jmnote/SimpleMathJax.git
+[submodule "addons/extensions/DisqusTag"]
+	path = addons/extensions/DisqusTag
+	url = https://github.com/wikimedia/mediawiki-extensions-DisqusTag.git
+	branch = REL1_34
+[submodule "addons/extensions/InputBox"]
+	path = addons/extensions/InputBox
+	url = https://github.com/wikimedia/mediawiki-extensions-InputBox.git
+	branch = REL1_34
+[submodule "addons/extensions/PhpTags"]
+	path = addons/extensions/PhpTags
+	url = https://github.com/wikimedia/mediawiki-extensions-PhpTags.git
+	branch = REL1_34
+[submodule "addons/extensions/CodeEditor"]
+	path = addons/extensions/CodeEditor
+	url = https://github.com/wikimedia/mediawiki-extensions-CodeEditor.git
+	branch = REL1_34
+[submodule "addons/extensions/SyntaxHighlight_GeSHi"]
+	path = addons/extensions/SyntaxHighlight_GeSHi
+	url = https://github.com/wikimedia/mediawiki-extensions-SyntaxHighlight_GeSHi.git
+	branch = REL1_34
+[submodule "addons/extensions/WikiTextLoggedInOut"]
+	path = addons/extensions/WikiTextLoggedInOut
+	url = https://github.com/wikimedia/mediawiki-extensions-WikiTextLoggedInOut.git
+	branch = REL1_34
+[submodule "addons/extensions/Interwiki"]
+	path = addons/extensions/Interwiki
+	url = https://github.com/wikimedia/mediawiki-extensions-Interwiki.git
+	branch = REL1_34
+[submodule "addons/skins/Vector"]
+	path = addons/skins/Vector
+	url = https://github.com/wikimedia/mediawiki-skins-Vector.git
+	branch = REL1_34
+[submodule "addons/skins/Metrolook"]
+	path = addons/skins/Metrolook
+	url = https://github.com/wikimedia/mediawiki-skins-Metrolook.git
+	branch = REL1_34
+[submodule "addons/skins/foreground"]
+	path = addons/skins/foreground
+	url = https://github.com/jthingelstad/foreground.git
+[submodule "addons/skins/pivot"]
+	path = addons/skins/pivot
+	url = https://github.com/Hutchy68/pivot.git
+[submodule "addons/skins/chameleon"]
+	path = addons/skins/chameleon
+	url = https://github.com/cmln/chameleon.git
+[submodule "addons/skins/Tweeki"]
+	path = addons/skins/Tweeki
+	url = https://github.com/thaider/Tweeki.git
+[submodule "addons/skins/Timeless"]
+	path = addons/skins/Timeless
+	url = https://github.com/wikimedia/mediawiki-skins-Timeless.git
+	branch = REL1_34
