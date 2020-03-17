@@ -14,14 +14,6 @@
 	path = addons/extensions/VoteNY
 	url = https://github.com/wikimedia/mediawiki-extensions-VoteNY.git
 	branch = REL1_34
-[submodule "addons/extensions/PhpTagsFunctions"]
-	path = addons/extensions/PhpTagsFunctions
-	url = https://github.com/wikimedia/mediawiki-extensions-PhpTagsFunctions.git
-	branch = REL1_34
-[submodule "addons/extensions/PhpTagsWiki"]
-	path = addons/extensions/PhpTagsWiki
-	url = https://github.com/wikimedia/mediawiki-extensions-PhpTagsWiki.git
-	branch = REL1_34
 [submodule "addons/extensions/BlogPage"]
 	path = addons/extensions/BlogPage
 	url = https://github.com/wikimedia/mediawiki-extensions-BlogPage.git
@@ -90,9 +82,6 @@
 	path = addons/extensions/ReplaceText
 	url = https://github.com/wikimedia/mediawiki-extensions-ReplaceText.git
 	branch = REL1_34
-[submodule "addons/extensions/3DAlloy"]
-	path = addons/extensions/3DAlloy
-	url = https://github.com/dolfinus/3DAlloy.git
 [submodule "addons/extensions/SocialProfile"]
 	path = addons/extensions/SocialProfile
 	url = https://github.com/wikimedia/mediawiki-extensions-SocialProfile.git
@@ -162,10 +151,6 @@
 	path = addons/extensions/InputBox
 	url = https://github.com/wikimedia/mediawiki-extensions-InputBox.git
 	branch = REL1_34
-[submodule "addons/extensions/PhpTags"]
-	path = addons/extensions/PhpTags
-	url = https://github.com/wikimedia/mediawiki-extensions-PhpTags.git
-	branch = REL1_34
 [submodule "addons/extensions/CodeEditor"]
 	path = addons/extensions/CodeEditor
 	url = https://github.com/wikimedia/mediawiki-extensions-CodeEditor.git
@@ -205,4 +190,12 @@
 [submodule "addons/skins/Timeless"]
 	path = addons/skins/Timeless
 	url = https://github.com/wikimedia/mediawiki-skins-Timeless.git
+	branch = REL1_34
+[submodule "addons/extensions/CommonsMetadata"]
+	path = addons/extensions/CommonsMetadata
+	url = https://github.com/wikimedia/mediawiki-extensions-CommonsMetadata.git
+	branch = REL1_34
+[submodule "addons/extensions/MultimediaViewer"]
+	path = addons/extensions/MultimediaViewer
+	url = https://github.com/wikimedia/mediawiki-extensions-MultimediaViewer.git
 	branch = REL1_34
