@@ -28,7 +28,7 @@ $wgMetaNamespace = "Ways_of_Darkness";
 ## https://www.mediawiki.org/wiki/Manual:Short_URL
 $wgFileExtensions = array( 'png', 'gif', 'jpg', 'jpeg', 'txt', 'obj', 'json',
     'xls', 'mpp', 'pdf', 'ppt', 'tiff', 'ogg', 'svg', 'svgz',
-    'woff', 'eot', 'woff2', 'ico'
+    'woff', 'eot', 'woff2', 'ico', 'json'
 );
 $wgScriptPath = "";
 $wgArticlePath = "/$1";
@@ -132,20 +132,9 @@ $wgGroupPermissions['*']['edit'] = false;
 # The following skins were automatically enabled:
 #wfLoadExtension( 'TemplateStyles' );
 #wfLoadExtension( 'TemplateData' );
-#wfLoadSkin( 'CologneBlue' );
-#wfLoadSkin( 'Modern' );
-#wfLoadSkin( 'MonoBook' );
 wfLoadSkin( 'Vector' );
-#wfLoadSkin( 'Refreshed' );
 wfLoadSkin( 'Timeless' );
-#wfLoadSkin( 'apex' );
-#wfLoadSkin( 'Material' );
-#wfLoadSkin( 'Tweeki' );
-#wfLoadSkin( 'chameleon' );
 wfLoadSkin( 'Metrolook' );
-#wfLoadSkin( 'foreground' );
-//wfLoadSkin( 'chameleon' );
-#wfLoadSkin( 'pivot' );
 $wgVectorResponsive = true;
 $wgDefaultSkin = "Vector";
 $wgVectorUseSimpleSearch = true;
@@ -176,7 +165,6 @@ wfLoadExtension( 'WikiTextLoggedInOut' );
 wfLoadExtension( 'BlogPage' );
 wfLoadExtension( 'CategoryTree' );
 wfLoadExtension( 'CharInsert' );
-#wfLoadExtension( 'CheckUser' );
 $wgGroupPermissions['sysop']['checkuser'] = true;
 $wgGroupPermissions['sysop']['checkuser-log'] = true;
 wfLoadExtension( 'Cite' );
@@ -186,7 +174,6 @@ wfLoadExtension( 'CodeEditor' );
 $wgDefaultUserOptions['usebetatoolbar'] = 1; // user option provided by WikiEditor extension
 wfLoadExtension( 'CodeMirror' );
 $wgDefaultUserOptions['usecodemirror'] = 1;
-# wfLoadExtension( 'Comments' );
 wfLoadExtension( 'ConfirmEdit' );
 $wgCaptchaClass = 'SimpleCaptcha';
 # DISQUS WON'T WORK!
@@ -208,7 +195,6 @@ $wgPageDisqusExclude = array("Main Page", ".+:.+");
 );*/
 wfLoadExtension( 'EmbedVideo' );
 wfLoadExtension( 'Gadgets' );
-#require_once "$IP/extensions/iDisplay/iDisplay.php";
 require_once "$IP/extensions/Widgets/Widgets.php";
 wfLoadExtension( 'ImageMap' );
 wfLoadExtension( 'InputBox' );
@@ -268,10 +254,7 @@ $wgRestrictDisplayTitle = false;
 $wgGroupPermissions['*']['edit'] = false;
 $wgGroupPermissions['*']['createpage'] = false;
 $wgShowIPinHeader = false;
-$wgMFDefaultSkinClass = 'SkinMinerva';
 
-#require_once("$IP/extensions/RegexParserFunctions/RegexParserFunctions.php");
-#require_once "$IP/extensions/MassEditRegex/MassEditRegex.php";
 $wgGroupPermissions['masseditregexeditor']['masseditregex'] = true;
 $wgGroupPermissions['sysop']['masseditregex'] = true;
 wfLoadExtension( 'ReplaceText' );
@@ -282,26 +265,14 @@ wfLoadExtension( 'LinkSuggest' );
 wfLoadExtension( 'YouTube' );
 wfLoadExtension( 'CommonsMetadata' );
 wfLoadExtension( 'MultimediaViewer' );
-# wfLoadExtension( 'Video' ); # DO NOT ADD AGAIN
 
 # For compatibility with CloudFlare
 $wgShowIPinHeader=false;
 $wgDisableCounters=true;
 
-# Temporary Test for linked HREF Svg
-# $wgDisableUploadScriptChecks=true;
 $wgGroupPermissions['*']['upload'] = false;
 $wgGroupPermissions['bureaucrat']['upload'] = true;
 $wgGroupPermissions['sysop']['upload'] = true;
-$wgFileExtensions = array_merge(
-  $wgFileExtensions, array(
-      'json', '3dj', '3djson', 'three',
-      'buff', 'buffjson',
-      'obj',
-      'stl', 'stlb', 'md2', 'gltf', 'glb', 'dae', 'xml'
-  )
-);
-
 
 # Maintenance Mode:
 /*$wgGroupPermissions['*']['createaccount'] = false;
