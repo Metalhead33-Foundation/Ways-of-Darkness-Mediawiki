@@ -174,7 +174,6 @@ wfLoadExtension( 'CodeEditor' );
 $wgDefaultUserOptions['usebetatoolbar'] = 1; // user option provided by WikiEditor extension
 wfLoadExtension( 'CodeMirror' );
 $wgDefaultUserOptions['usecodemirror'] = 1;
-wfLoadExtension( 'Comments' );
 wfLoadExtension( 'ConfirmEdit' );
 $wgCaptchaClass = 'SimpleCaptcha';
 # DISQUS WON'T WORK!
