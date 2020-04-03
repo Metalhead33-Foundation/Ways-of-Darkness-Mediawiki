@@ -60,7 +60,7 @@ $wgEnotifWatchlist = false; # UPO
 $wgEmailAuthentication = true;
 
 ## Database settings
-require('/vault/secrets/db-cred.php');
+require('/vault/secrets/db-creds.php');
 
 ## Shared memory settings
 $wgMainCacheType = CACHE_ACCEL;
