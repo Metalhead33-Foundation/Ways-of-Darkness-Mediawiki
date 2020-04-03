@@ -60,14 +60,6 @@ $wgEnotifWatchlist = false; # UPO
 $wgEmailAuthentication = true;
 
 ## Database settings
-$wgDBtype = "postgres";
-$wgDBserver = $_ENV['POSTGRES_HOST'];
-$wgDBname = $_ENV['POSTGRES_NAME'];
-require('/vault/secrets/db-cred.php');
-
-# Postgres specific settings
-$wgDBport = $_ENV['POSTGRES_PORT'];
-$wgDBmwschema = "mediawiki";
 require('/vault/secrets/db-cred.php');
 
 ## Shared memory settings
