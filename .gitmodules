@@ -199,3 +199,6 @@
 	path = addons/extensions/MultimediaViewer
 	url = https://github.com/wikimedia/mediawiki-extensions-MultimediaViewer.git
 	branch = REL1_34
+[submodule "addons/skins/Medik"]
+	path = addons/skins/Medik
+	url = https://bitbucket.org/wikiskripta/medik.git
