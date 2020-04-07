@@ -124,11 +124,12 @@ $wgGroupPermissions['*']['edit'] = false;
 # The following skins were automatically enabled:
 #wfLoadExtension( 'TemplateStyles' );
 #wfLoadExtension( 'TemplateData' );
+wfLoadSkin( 'Medik' );
 wfLoadSkin( 'Vector' );
 wfLoadSkin( 'Timeless' );
 wfLoadSkin( 'Metrolook' );
 $wgVectorResponsive = true;
-$wgDefaultSkin = "Vector";
+$wgDefaultSkin = "Medik";
 $wgVectorUseSimpleSearch = true;
 $wgVectorUseIconWatch = true;
 
