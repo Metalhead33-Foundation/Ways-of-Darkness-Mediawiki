@@ -175,17 +175,6 @@ $wgDisqusShortname = 'waysofdarkness';
 # Echo don't work either!
 $wgPageDisqusShortname = "waysofdarkness";
 $wgPageDisqusExclude = array("Main Page", ".+:.+");
-#wfLoadExtension( 'VisualEditor' );
-#$wgDefaultUserOptions['visualeditor-enable'] = 1;
-/*$wgVirtualRestConfig['modules']['parsoid'] = array(
-   // URL to the Parsoid instance
-   // Use port 8142 if you use the Debian package
-         'url' => 'http://localhost:8000',
-   // Parsoid "domain", see below (optional)
-         'domain' => 'ways-of-darkness.sonck.nl',
-  // Parsoid "prefix", see below (optional)
-         'prefix' => 'localhost'
-);*/
 wfLoadExtension( 'EmbedVideo' );
 wfLoadExtension( 'Gadgets' );
 require_once "$IP/extensions/Widgets/Widgets.php";
@@ -195,7 +184,8 @@ wfLoadExtension( 'Interwiki' );
 $wgGroupPermissions['sysop']['interwiki'] = true;
 wfLoadExtension( 'Math' );
 $wgDefaultUserOptions['math'] = 'mathml';
-$wgMathFullRestbaseURL= 'https://en.wikipedia.org/api/rest_';
+$wgMathFullRestbaseURL = 'https://en.wikipedia.org/api/rest_';
+$wgMathMathMLUrl = 'https://mathoid-beta.wmflabs.org/';
 $wgEmailFrom ="info@ways-of-darkness.sonck.nl";
  $wgSendNewArticleToFriends=false;
 $wgGroupPermissions['sysop']['moderation'] = true; # Allow sysops to use Special:Moderation
@@ -266,8 +256,3 @@ $wgDisableCounters=true;
 $wgGroupPermissions['*']['upload'] = false;
 $wgGroupPermissions['bureaucrat']['upload'] = true;
 $wgGroupPermissions['sysop']['upload'] = true;
-
-# Maintenance Mode:
-/*$wgGroupPermissions['*']['createaccount'] = false;
-$wgGroupPermissions['*']['edit'] = false;
-$wgGroupPermissions['*']['read'] = false;*/
