@@ -131,8 +131,8 @@ define("NS_META", 3006);
 define("NS_META_TALK", 3007);
 define("NS_RPG", 3008);
 define("NS_RPG_TALK", 3009);
-define("NS_RECAP", 3008);
-define("NS_RECAP_TALK", 3009);
+define("NS_RECAP", 3010);
+define("NS_RECAP_TALK", 3011);
 // Add namespaces.
 $wgExtraNamespaces[NS_TROPES] = "Tropes";
 $wgExtraNamespaces[NS_TROPES_TALK] = "Tropes_talk";
