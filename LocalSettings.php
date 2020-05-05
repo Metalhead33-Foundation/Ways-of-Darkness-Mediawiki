@@ -117,6 +117,48 @@ $wgDiff3 = "/usr/bin/diff3";
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['*']['edit'] = false;
 
+$wgInterwikiMagic = true;
+$wgNamespacesWithSubpages[NS_MAIN] = true;
+$wgNamespacesWithSubpages[NS_TEMPLATE] = true;
+// Define constants for my additional namespaces.
+define("NS_TROPES", 3000); // This MUST be even.
+define("NS_TROPES_TALK", 3001); // This MUST be the following odd integer.
+define("NS_QUOTES", 3002);
+define("NS_QUOTES_TALK", 3003);
+define("NS_MEMES", 3004);
+define("NS_MEMES_TALK", 3005);
+define("NS_META", 3006);
+define("NS_META_TALK", 3007);
+define("NS_RPG", 3008);
+define("NS_RPG_TALK", 3009);
+define("NS_RECAP", 3010);
+define("NS_RECAP_TALK", 3011);
+// Add namespaces.
+$wgExtraNamespaces[NS_TROPES] = "Tropes";
+$wgExtraNamespaces[NS_TROPES_TALK] = "Tropes_talk";
+$wgNamespacesWithSubpages[NS_TROPES] = true;
+$wgContentNamespaces[] = NS_TROPES;
+$wgExtraNamespaces[NS_QUOTES] = "Quotes";
+$wgExtraNamespaces[NS_QUOTES_TALK] = "Quotes_talk";
+$wgNamespacesWithSubpages[NS_QUOTES] = true;
+$wgContentNamespaces[] = NS_QUOTES;
+$wgExtraNamespaces[NS_MEMES] = "Memes";
+$wgExtraNamespaces[NS_MEMES_TALK] = "Memes_talk";
+$wgNamespacesWithSubpages[NS_MEMES] = true;
+$wgContentNamespaces[] = NS_MEMES;
+$wgExtraNamespaces[NS_META] = "Meta";
+$wgExtraNamespaces[NS_META_TALK] = "Meta_talk";
+$wgNamespacesWithSubpages[NS_META] = true;
+$wgContentNamespaces[] = NS_META;
+$wgExtraNamespaces[NS_RPG] = "RPG";
+$wgExtraNamespaces[NS_RPG_TALK] = "RPG_talk";
+$wgNamespacesWithSubpages[NS_RPG] = true;
+$wgContentNamespaces[] = NS_RPG;
+$wgExtraNamespaces[NS_RECAP] = "Recap";
+$wgExtraNamespaces[NS_RECAP_TALK] = "Recap_talk";
+$wgNamespacesWithSubpages[NS_RECAP] = true;
+$wgContentNamespaces[] = NS_RECAP;
+
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
 
@@ -220,9 +262,7 @@ $wgConfirmAccountContact = $_ENV["MW_CONFIRMACCOUNT"];
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
 wfLoadExtension( 'UniversalLanguageSelector' );
-$wgInterwikiMagic = true;
-$wgNamespacesWithSubpages[NS_MAIN] = true;
-$wgNamespacesWithSubpages[NS_TEMPLATE] = true;
+// Other stuff
 $wgPFEnableStringFunctions = true;
 $wgUseInstantCommons = true;
 $wgUseTidy=true;
