@@ -178,6 +178,7 @@ wfLoadExtension( 'ImportArticles' );
 # End of automatically generated settings.
 # Add more configuration options below.
 $wgAllowUserJs = true;
+wfLoadExtension( 'TemplateStyles' );
 wfLoadExtension( 'DeleteBatch' );
 $wgGroupPermissions['bureaucrat']['deletebatch'] = false;
 $wgGroupPermissions['sysop']['deletebatch'] = true;

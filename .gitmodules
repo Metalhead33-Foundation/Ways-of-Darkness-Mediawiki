@@ -202,3 +202,6 @@
 [submodule "addons/skins/Medik"]
 	path = addons/skins/Medik
 	url = https://bitbucket.org/wikiskripta/medik.git
+[submodule "addons/extensions/mediawiki-extensions-TemplateStyles"]
+	path = addons/extensions/TemplateStyles
+	url = https://github.com/wikimedia/mediawiki-extensions-TemplateStyles.git

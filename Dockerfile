@@ -17,6 +17,7 @@ RUN ( \
     php -r "unlink('composer-setup.php');"; \
     php composer.phar install; \
     ( cd extensions/Widgets; php ../../composer.phar install; ) ; \
+    ( cd extensions/TemplateStyles; php ../../composer.phar install --no-dev; ) ; \
     php -r "unlink('composer.phar');"; \
 )
 RUN chown www-data -R .
