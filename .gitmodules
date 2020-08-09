@@ -205,3 +205,4 @@
 [submodule "addons/extensions/mediawiki-extensions-TemplateStyles"]
 	path = addons/extensions/TemplateStyles
 	url = https://github.com/wikimedia/mediawiki-extensions-TemplateStyles.git
+    branch = REL1_34
