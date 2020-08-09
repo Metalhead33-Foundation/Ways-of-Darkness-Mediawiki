@@ -97,6 +97,7 @@
 [submodule "addons/extensions/EmbedVideo"]
 	path = addons/extensions/EmbedVideo
 	url = https://gitlab.com/hydrawiki/extensions/EmbedVideo.git
+	branch = master
 [submodule "addons/extensions/ParserFunctions"]
 	path = addons/extensions/ParserFunctions
 	url = https://github.com/wikimedia/mediawiki-extensions-ParserFunctions.git
@@ -124,6 +125,7 @@
 [submodule "addons/extensions/NativeSvgHandler"]
 	path = addons/extensions/NativeSvgHandler
 	url = https://github.com/wikimedia/mediawiki-extensions-NativeSvgHandler.git
+	branch = REL1_35
 [submodule "addons/extensions/Math"]
 	path = addons/extensions/Math
 	url = https://github.com/wikimedia/mediawiki-extensions-Math.git
@@ -143,6 +145,7 @@
 [submodule "addons/extensions/SimpleMathJax"]
 	path = addons/extensions/SimpleMathJax
 	url = https://github.com/jmnote/SimpleMathJax.git
+	branch = master
 [submodule "addons/extensions/DisqusTag"]
 	path = addons/extensions/DisqusTag
 	url = https://github.com/wikimedia/mediawiki-extensions-DisqusTag.git
@@ -178,15 +181,19 @@
 [submodule "addons/skins/foreground"]
 	path = addons/skins/foreground
 	url = https://github.com/jthingelstad/foreground.git
+	branch = master
 [submodule "addons/skins/pivot"]
 	path = addons/skins/pivot
 	url = https://github.com/Hutchy68/pivot.git
+	branch = master
 [submodule "addons/skins/chameleon"]
 	path = addons/skins/chameleon
 	url = https://github.com/cmln/chameleon.git
+	branch = master
 [submodule "addons/skins/Tweeki"]
 	path = addons/skins/Tweeki
 	url = https://github.com/thaider/Tweeki.git
+	branch = master
 [submodule "addons/skins/Timeless"]
 	path = addons/skins/Timeless
 	url = https://github.com/wikimedia/mediawiki-skins-Timeless.git
@@ -202,6 +209,7 @@
 [submodule "addons/skins/Medik"]
 	path = addons/skins/Medik
 	url = https://bitbucket.org/wikiskripta/medik.git
+	branch = master
 [submodule "addons/extensions/mediawiki-extensions-TemplateStyles"]
 	path = addons/extensions/TemplateStyles
 	url = https://github.com/wikimedia/mediawiki-extensions-TemplateStyles.git
