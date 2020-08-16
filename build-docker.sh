@@ -71,8 +71,7 @@ buildah run -- "${C}" rm composer.phar || on_fail
 
 buildah run -- "${C}" chown www-data -R . || on_fail
 
-buildah commit "${C}" $REPOSITORY
-buildah push $REPOSITORY
+buildah commit "${C}" "docker://$REPOSITORY"
 
 # podman --cgroup-manager=cgroupfs image build . -t $REPOSITORY || exit 1
 # podman --cgroup-manager=cgroupfs image push $REPOSITORY || exit 1
