@@ -12,7 +12,7 @@ REPOSITORY=$HOST/$NAME:$VERSION-$BUILD
 
 echo "Building $REPOSITORY"
 
-docker image build . -t $REPOSITORY || exit 1
-docker image push $REPOSITORY || exit 1
+podman --cgroup-manager=cgroupfs image build . -t $REPOSITORY || exit 1
+podman --cgroup-manager=cgroupfs image push $REPOSITORY || exit 1
 
 echo "version=$VERSION-$BUILD" > variables.txt
