@@ -73,8 +73,8 @@ run_composer() {
 
 #buildah commit "${C}" "docker://$REPOSITORY"
 
-buildah bud -t docker://$REPOSITORY . || exit 1
-buildah push docker://$REPOSITORY || exit 1
+buildah bud -t $REPOSITORY . || exit 1
+buildah push $REPOSITORY docker://$REPOSITORY || exit 1
 #podman --cgroup-manager=cgroupfs image push $REPOSITORY || exit 1
 
 echo "version=$VERSION" > variables.txt
