@@ -133,6 +133,8 @@ define("NS_RPG", 3008);
 define("NS_RPG_TALK", 3009);
 define("NS_RECAP", 3010);
 define("NS_RECAP_TALK", 3011);
+define("NS_CK2", 3012);
+define("NS_CK2_TALK", 3013);
 // Add namespaces.
 $wgExtraNamespaces[NS_TROPES] = "Tropes";
 $wgExtraNamespaces[NS_TROPES_TALK] = "Tropes_talk";
@@ -158,6 +160,10 @@ $wgExtraNamespaces[NS_RECAP] = "Recap";
 $wgExtraNamespaces[NS_RECAP_TALK] = "Recap_talk";
 $wgNamespacesWithSubpages[NS_RECAP] = true;
 $wgContentNamespaces[] = NS_RECAP;
+$wgExtraNamespaces[NS_CK2] = "CK3";
+$wgExtraNamespaces[NS_CK2_TALK] = "CK3_talk";
+$wgNamespacesWithSubpages[NS_CK2] = true;
+$wgContentNamespaces[] = NS_CK2;
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
