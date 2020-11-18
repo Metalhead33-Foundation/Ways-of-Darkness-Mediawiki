@@ -36,7 +36,7 @@ plan-dev:
     action: prepare
     auto_stop_in: 2 days
   rules:
-    - if: '$CI_COMMIT_BRANCH == "develop"'
+    - if: '$CI_COMMIT_BRANCH == "development"'
       when: on_success
   script:
     - cp ../mediawiki.version.auto.tfvars .
@@ -63,7 +63,7 @@ apply-dev:
     - plan-dev
     - build
   rules:
-    - if: '$CI_COMMIT_BRANCH == "develop"'
+    - if: '$CI_COMMIT_BRANCH == "development"'
       when: manual
 
 stop-dev:
@@ -78,5 +78,5 @@ stop-dev:
     name: development
     action: stop
   rules:
-    - if: '$CI_COMMIT_BRANCH == "develop"'
+    - if: '$CI_COMMIT_BRANCH == "development"'
       when: manual
