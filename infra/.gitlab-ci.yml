@@ -80,3 +80,42 @@ stop-dev:
   rules:
     - if: '$CI_COMMIT_BRANCH == "development"'
       when: manual
+
+plan-prod:
+  <<: *deploy_tpl
+  needs:
+    - build
+    - validate
+  stage: deploy-plan
+  environment:
+    name: production
+    action: prepare
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^release\//'
+      when: on_success
+  script:
+    - cp ../mediawiki.version.auto.tfvars .
+    - gitlab-terraform plan
+    - gitlab-terraform plan-json
+  artifacts:
+    name: plan-prod
+    paths:
+      - ${TF_ROOT}/plan.cache
+
+apply-prod:
+  <<: *deploy_tpl
+  needs:
+    - plan-prod
+    - build
+  stage: deploy-execute
+  environment:
+    name: production
+  script:
+    - cp ../mediawiki.version.auto.tfvars .
+    - gitlab-terraform apply
+  dependencies:
+    - plan-prod
+    - build
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^release\//'
+      when: manual
