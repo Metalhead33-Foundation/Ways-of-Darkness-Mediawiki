@@ -107,7 +107,7 @@ resource "kubernetes_deployment" "mediawiki" {
         automount_service_account_token = true
         init_container {
           name = "update"
-          image = "docker2.touhou.fm/waysofdarkness/wiki:${var.app_version}"
+          image = "${var.app_image}:${var.app_version}"
           command = [
             "php",
             "maintenance/update.php"]
@@ -150,7 +150,7 @@ resource "kubernetes_deployment" "mediawiki" {
 
         container {
           name = "main"
-          image = "docker2.touhou.fm/waysofdarkness/wiki:${var.app_version}"
+          image = "${var.app_image}:${var.app_version}"
           env {
             name = "MW_SITE"
             value = "https://${var.domain}"
