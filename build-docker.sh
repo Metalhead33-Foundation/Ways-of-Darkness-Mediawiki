@@ -2,15 +2,9 @@
 
 VERSION=$(git describe | sed s!release/!!g)
 
-HOST=$1
-shift
-NAME=waysofdarkness/wiki
-
 MEDIAWIKI_VERSION=1.34.2
 
-REPOSITORY=$HOST/$NAME:$VERSION
-
-echo "Building $REPOSITORY"
+echo "Building $1"
 
 on_fail() {
     buildah rm "${C}"
