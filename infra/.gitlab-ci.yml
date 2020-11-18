@@ -1,0 +1,82 @@
+.deploy_template: &deploy_tpl
+  image: registry.gitlab.com/gitlab-org/terraform-images/releases/0.13:v0.2.4
+  variables:
+    TF_ROOT: ${CI_PROJECT_DIR}/infra
+    TF_ADDRESS: ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/terraform/state/${CI_ENVIRONMENT_NAME}
+  cache:
+    key: production
+    paths:
+      - ${TF_ROOT}/.terraform
+  before_script:
+    - cd ${TF_ROOT}
+    - ./terraform-gitlab.sh
+
+init:
+  <<: *deploy_tpl
+  stage: deploy-prepare
+  script:
+    - gitlab-terraform init
+
+validate:
+  <<: *deploy_tpl
+  needs:
+    - init
+  stage: deploy-validate
+  script:
+    - gitlab-terraform validate
+
+plan-dev:
+  <<: *deploy_tpl
+  needs:
+    - build
+    - validate
+  stage: deploy-plan
+  environment:
+    name: development
+    action: prepare
+    auto_stop_in: 2 days
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop"'
+      when: on_success
+  script:
+    - cp ../mediawiki.version.auto.tfvars .
+    - gitlab-terraform plan
+    - gitlab-terraform plan-json
+  artifacts:
+    name: plan-dev
+    paths:
+      - ${TF_ROOT}/plan.cache
+
+apply-dev:
+  <<: *deploy_tpl
+  needs:
+    - plan-dev
+    - build
+  stage: deploy-execute
+  environment:
+    name: development
+    on_stop: stop-dev
+  script:
+    - cp ../mediawiki.version.auto.tfvars .
+    - gitlab-terraform apply
+  dependencies:
+    - plan-dev
+    - build
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop"'
+      when: manual
+
+stop-dev:
+  <<: *deploy_tpl
+  needs:
+    - apply-dev
+  stage: deploy-destroy
+  script:
+    - gitlab-terraform init
+    - gitlab-terraform destroy -auto-approve
+  environment:
+    name: development
+    action: stop
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop"'
+      when: manual

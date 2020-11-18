@@ -73,8 +73,10 @@ run_composer() {
 
 #buildah commit "${C}" "docker://$REPOSITORY"
 
-buildah bud -t $REPOSITORY . || exit 1
-buildah push $REPOSITORY docker://$REPOSITORY || exit 1
+buildah bud -t "$1:$VERSION" . || exit 1
+buildah push "$1:$VERSION" "docker://$1:$VERSION" || exit 1
 #podman --cgroup-manager=cgroupfs image push $REPOSITORY || exit 1
 
-echo "version=$VERSION" > variables.txt
+cat > mediawiki.version.auto.tfvars <<EOC # language=terraform
+app_version = "$VERSION"
+EOC
