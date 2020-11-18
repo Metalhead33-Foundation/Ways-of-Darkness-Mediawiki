@@ -1,4 +1,4 @@
-FROM mediawiki:1.34.2
+FROM mediawiki:1.35.0
 RUN usermod -u 1033 www-data
 RUN apt-get update && apt-get install -y lua5.1-dev libpq-dev unzip locales
 RUN locale-gen --no-purge en_US.UTF-8
