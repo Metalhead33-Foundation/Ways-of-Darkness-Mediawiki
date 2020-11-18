@@ -15,11 +15,10 @@ terraform {
 EOB
 
 cat << EOC > details.auto.tfvars # language=terraform
-gateway_image = "${CI_REGISTRY_IMAGE:-gateway}"
+app_image = "${CI_REGISTRY_IMAGE:-mediawiki}"
 
 db_name = "${db_name:-mw_wodsonck}"
 domain = "${domain:-ways-of-darkness.sonck.nl}"
-name_suffix = "${name_suffix:-}"
 ssh_host = "${ssh_host:-192.168.254.19}"
 
 environment = "${ENV}"
