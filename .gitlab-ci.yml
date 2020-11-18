@@ -7,6 +7,8 @@ stages:
   - deploy-destroy
 
 build:
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
   stage: build-app
   script:
     - buildah login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY

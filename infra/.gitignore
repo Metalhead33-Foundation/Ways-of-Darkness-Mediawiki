@@ -1,0 +1,6 @@
+backend.tf
+details.auto.tfvars
+mediawiki.version.auto.tfvars
+plan
+plan.cache
+.terraform
