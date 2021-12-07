@@ -135,18 +135,18 @@ define("NS_RECAP", 3010);
 define("NS_RECAP_TALK", 3011);
 define("NS_CK2", 3012);
 define("NS_CK2_TALK", 3013);
-define('NS_CHAR', 3014);
-define('NS_CHAR_TALK', 3015);
-define('NS_LORE', 3016);
-define('NS_LORE_TALK', 3017);
-define('NS_GAME', 3018);
-define('NS_GAME_TALK', 3019);
-define('NS_AREA', 3020);
-define('NS_AREA_TALK', 3021);
-define('NS_ITEM', 3022);
-define('NS_ITEM_TALK', 3023);
-define('NS_VOCAB', 3024);
-define('NS_VOCAB_TALK', 3025);
+define("NS_CHAR", 3014);
+define("NS_CHAR_TALK", 3015);
+define("NS_LORE", 3016);
+define("NS_LORE_TALK", 3017);
+define("NS_GAME", 3018);
+define("NS_GAME_TALK", 3019);
+define("NS_AREA", 3020);
+define("NS_AREA_TALK", 3021);
+define("NS_ITEM", 3022);
+define("NS_ITEM_TALK", 3023);
+define("NS_VOCAB", 3024);
+define("NS_VOCAB_TALK", 3025);
 // Add namespaces.
 $wgExtraNamespaces[NS_TROPES] = "Tropes";
 $wgExtraNamespaces[NS_TROPES_TALK] = "Tropes_talk";
@@ -251,8 +251,8 @@ wfLoadExtension( 'CodeMirror' );
 $wgDefaultUserOptions['usecodemirror'] = 1;
 wfLoadExtension( 'ConfirmEdit' );
 $wgCaptchaClass = 'SimpleCaptcha';
-# DISQUS WON'T WORK!
-wfLoadExtension( 'DisqusTag' );
+# DISQUS WON'T WORK! - also, it's deprecated anyway
+# wfLoadExtension( 'DisqusTag' );
 $wgDisqusShortname = 'waysofdarkness';
 # Echo don't work either!
 $wgPageDisqusShortname = "waysofdarkness";
