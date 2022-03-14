@@ -1,6 +1,6 @@
 FROM mediawiki:1.37.0
 RUN usermod -u 1033 www-data
-RUN apt-get update && apt-get install -y lua5.1-dev libpq-dev unzip locales
+RUN apt-get update && apt-get install -y lua5.1-dev libpq-dev unzip locales libicu-dev
 RUN locale-gen --no-purge en_US.UTF-8
 RUN docker-php-source extract && \
     pecl install LuaSandbox && \
