@@ -2,7 +2,7 @@
 
 VERSION=$(git describe | sed s!release/!!g)
 
-MEDIAWIKI_VERSION=1.34.2
+MEDIAWIKI_VERSION=1.37.0
 
 echo "Building $1"
 
